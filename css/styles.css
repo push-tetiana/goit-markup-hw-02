@@ -1,16 +1,21 @@
 :root {
 --color-brend: #4D5AE5;
 --color-secend: #404BBF;
+--color-third: #F4F4FD;
+--color-primary-inverted: #FFFFFF;
+--color-primary-dark: #2E2F42;
+--color-secondary: #434455;
+--color-additional: #E7E9FC;
 }
 
 body {
-    font-family: 'Roboto'; 
-    background: #E5E5E5;
-    color: #434455;
+    font-family: 'Roboto' , sans-serif; 
+    background: var(--color-primary-inverted);
+    color: var(--color-secondary);
 }
 
 .page-header {
-    background: #FFFFFF;
+    background: var(--color-primary-inverted);
 }
 
 ul {
@@ -28,11 +33,11 @@ ul {
 }
 
 .logo-second {
-    color: #2E2F42;
+    color: var(--color-primary-dark);
 }
 
 .image-hero {
-    background: #2E2F42;
+    background: var(--color-primary-dark);
 }
 
 .link {
@@ -40,7 +45,7 @@ ul {
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
-    color: #2E2F42;
+    color: var(--color-primary-dark);
     text-decoration: none;
 }
 
@@ -55,7 +60,7 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--color-secondary);
     text-decoration: none
 }
 
@@ -68,15 +73,18 @@ ul {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.071;
+    letter-spacing: 0.02em;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--color-primary-inverted);
 }
 
 .button-hero {
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    color: #FFFFFF;
+    letter-spacing: 0.02em;
+    color: var(--color-primary-inverted);
     background: var(--color-brend);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -90,27 +98,32 @@ ul {
     border-radius: 4px;
 }
 
- .section-solutions {
-    background: #E5E5E5;
- }
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
- .section-solutions h3 {
+ .title-solutions {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--color-primary-dark);
         
  }
 
- .section-solutions p {
+ .text-solutions {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-
-.section-images {
-    background: #E5E5E5;
 }
 
 .title-second {
@@ -123,19 +136,24 @@ ul {
 }
 
 .section-team {
-    background: #F4F4FD;
+    background: var(--color-third);
 }
 
-.section-team h3 {
+.wrapper-box {
+    background: var(--color-primary-inverted);
+}
+
+.title-team {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: #2E2F42;
+    color: var(--color-primary-dark);
 }
 
-.section-team p {
+.text-team {
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .logo-third {
@@ -143,19 +161,22 @@ ul {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.167;
-    color: #fdf4f5;
+    color: var(--color-third);
 }
 
 .footer {
-    background: #2E2F42;
+    background: var(--color-primary-dark);
+}
+
+.text-footer {
     font-size: 16px;
     line-height: 1.5;
-    color: #E7E9FC;
+    color: var(--color-additional);
 }
 
 .button {
-    background: #F4F4FD;
-    border: 1px solid #E7E9FC;
+    background: var(--color-additional);
+    border: 1px solid var(--color-additional);;
     border-radius: 4px;
     color: var(--color-brend);
     cursor: pointer;
@@ -166,22 +187,22 @@ ul {
     background: var(--color-secend);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--color-primary-inverted);
 }
 
-.section-site h2 {
+.title-site {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--color-primary-dark);
 }
 
-.section-site p {
+.text-site {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--color-secondary);
 }
 
 .link-site {
